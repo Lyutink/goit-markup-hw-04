@@ -5,6 +5,7 @@
   --primary-text-color: #757575;
   --primary-black-color: #000000;
   --background-color-light: #f5f4fa;
+  --social-color: #afb1b8;
 }
 
 h1,
@@ -47,6 +48,17 @@ img {
   padding-bottom: 94px;
 }
 /*==============================*/
+/*========COMPONENTS============*/
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  margin-bottom: 50px;
+}
+/*======END===COMPONENTS========*/
 /*========hidden================*/
 .visualy-hidden {
   position: absolute;
@@ -58,16 +70,17 @@ img {
 /*====end==hidden===============*/
 /* ===========header==========*/
 .body {
-  color: var(--primary-text-color);
-  background-color: var(--primary-white-color);
   font-family: "Roboto", sans-serif;
+  color: var(--primary-text-color);
+  font-weight: 400;
+  background-color: var(--primary-white-color);
 }
 /*==Logo==*/
 .logo {
   margin-right: 90px;
 
   font-family: "Raleway", sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -151,7 +164,6 @@ img {
 }
 
 .connect-link-icon {
-  /* fill: #757575;*/
   width: 16px;
   height: 12px;
   margin-right: 10px;
@@ -194,7 +206,7 @@ img {
   border: none;
 
   font-family: inherit;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
@@ -232,7 +244,7 @@ img {
 }
 .edvantages-title {
   margin-bottom: 10px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -240,7 +252,6 @@ img {
   color: var(--title-text-color);
 }
 .edvantages-description {
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -248,18 +259,6 @@ img {
 /*========== END===   Преимущества - edvantages====*/
 
 /*==========benefits Чем мы занимаемся======*/
-
-.benefits-title {
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
-
-  margin-bottom: 50px;
-}
-
 .benefits-list {
   display: flex;
   margin-top: -30px;
@@ -294,15 +293,7 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team-title {
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
-  margin-bottom: 50px;
-}
+
 .team-name {
   margin-bottom: 10px;
   font-weight: 500;
@@ -314,7 +305,6 @@ img {
 }
 
 .team-profession {
-  font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -327,14 +317,20 @@ img {
   justify-content: center;
   justify-content: space-between;
 }
-
+.team-social-item {
+  width: 44px;
+  height: 44px;
+}
 .team-social-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
+}
+.team-social-link {
+  fill: var(--social-color);
 }
 
 .team-social-link:hover,
@@ -349,6 +345,37 @@ img {
 }
 /*==========END=== Team Наша команда======*/
 
+/*=========Clients====Постоянные клтенты===*/
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-right: -30px;
+}
+
+.clients-item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: var(--social-color);
+}
+
+.clients-item-link:hover,
+.clients-item-link:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
+.clients-item {
+  margin-top: 30px;
+  margin-right: 30px;
+  flex-basis: calc((100% - 180px) / 6);
+}
+/*=========END===Clients====Постоянные клтенты===*/
+
 /*==========Footer============*/
 .footer {
   background-color: #2f303a;
@@ -360,7 +387,6 @@ img {
   margin-top: 20px;
 }
 .footer-address-map {
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -372,7 +398,6 @@ img {
 }
 
 .footer-address-mail {
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -384,7 +409,7 @@ img {
 }
 
 .footer-address-tell {
-  font-weight: normal;
+  /*font-weight: 400;*/
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -393,6 +418,51 @@ img {
 .footer-address-tell:hover,
 .footer-address-tell:focus {
   color: var(--accent-color);
+}
+
+.footer-container {
+  display: flex;
+}
+.footer-left {
+  margin-right: 70px;
+}
+.footer-right {
+  margin-top: 12px;
+}
+.footer-right-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  margin-bottom: 20px;
+}
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  fill: var(--primary-white-color);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.footer-social-item {
+  width: 44px;
+  height: 44px;
+}
+.footer-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-color);
 }
 /*==========END=== Footer======*/
 /*=============================*/
@@ -428,6 +498,8 @@ img {
 .filter-btn:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /*=====END== Filter=============*/
 
@@ -444,15 +516,23 @@ img {
   margin-left: 30px;
   margin-top: 30px;
 }
-
+.exemples-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.exemples-conteiner {
+  margin: 0 0;
+}
 .exemples-card {
+  text-align: left;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
 }
 .exemples-name {
   margin-bottom: 4px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -460,11 +540,16 @@ img {
 }
 
 .exemples-work {
-  font-weight: normal;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+
+.exemples-link:hover,
+.exemples-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /*=====END====Exemples============*/
