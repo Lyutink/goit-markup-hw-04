@@ -148,8 +148,8 @@ img {
 .connect-link {
   display: flex;
   align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px; /*для увеличения площади кликабельности*/
+  padding-top: 12px;
+  padding-bottom: 12px; /*для увеличения площади кликабельности*/
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -164,8 +164,6 @@ img {
 }
 
 .connect-link-icon {
-  width: 16px;
-  height: 12px;
   margin-right: 10px;
 }
 /* ===========END=== header==========*/
@@ -474,7 +472,7 @@ img {
   display: flex;
   justify-content: center;
 
-  margin-bottom: 35px;
+  margin-bottom: 50px;
 }
 
 .filter-item:not(:last-child) {
